@@ -2,13 +2,13 @@ pipeline {
     agent any
 
     stages {
-       stage('Build Spring Boot') {
-    steps {
-        dir('aocv_back1') {
-            sh 'gradle clean build'
+        stage('Build Spring Boot') {
+            steps {
+                dir('aocv_back1') {
+                    sh './gradlew clean build'
+                }
+            }
         }
-    }
-}
 
         stage('Build React App') {
             steps {
