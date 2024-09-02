@@ -4,15 +4,15 @@ pipeline {
     stages {
         stage('Build Spring Boot') {
             steps {
-                dir('aocv_backend/aocv_back') {
-                    sh 'mvn clean package'
+                dir('aocv_back1') { // Gradle 빌드를 실행할 디렉토리
+                    sh './gradlew clean build' // Gradle Wrapper 사용하여 빌드
                 }
             }
         }
 
         stage('Build React App') {
             steps {
-                dir('aocv/aocv_front') {
+                dir('aocv_front') {
                     sh 'npm install'
                     sh 'npm run build'
                 }
