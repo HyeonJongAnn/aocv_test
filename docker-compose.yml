@@ -1,0 +1,13 @@
+version: '3'
+services:
+  frontend:
+    build: ./aocv/aocv_front
+    ports:
+      - "3000:3000"
+    environment:
+      - REACT_APP_API_URL=${REACT_APP_API_URL}
+
+  backend:
+    build: ./aocv_backend/aocv_back
+    ports:
+      - "8080:8080"
