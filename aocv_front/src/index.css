@@ -1,0 +1,39 @@
+body {
+  width: 768px;
+  margin: 0 auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
+
+.content {
+  margin-bottom: 80px;
+  padding: 20px 20px 20%;
+  width: calc(100% - 40px);
+  position: relative;
+}
+
+.content > div {
+  width: 100%;
+}
+
+@media (max-width: 767px) {
+  body {
+    width: 100%;
+  }
+}
+
+@media (max-width: 349px) {
+  body {
+    width: 350px;
+  }
+}
+
+/* 특정 페이지에 대한 스타일 추가 */
+body.admin-page {
+  width: 1240px;
+  margin: 0 auto;
+}

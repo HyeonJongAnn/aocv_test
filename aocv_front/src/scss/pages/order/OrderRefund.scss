@@ -1,0 +1,156 @@
+@import '../../util';
+
+.orderRefundContainer {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+.orderRefundContainer h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.productInfo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    border-bottom: 10px solid #dee2e6;
+    padding-bottom: 20px;
+
+    .refundItem-image {
+        width: 100px;
+        height: 110px;
+        margin-right: 20px;
+        cursor: pointer;
+        margin-left: 2%;
+        margin-top: 2%;
+    }
+
+    .refundItem-info {
+        margin-top: 2%;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+        justify-content: flex-start;
+        align-items: flex-start;
+
+
+        .refundItem-name {
+            font-size: 14px;
+            font-weight: bold;
+            margin-bottom: 1%;
+        }
+
+        .orderItemOption
+         {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 1%;
+        }
+
+        .refundItem-price {
+            font-size: 15px;
+            font-weight: bold;
+            color: #333;
+        }
+    }
+
+    h2 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    p {
+        margin: 5px 0;
+    }
+}
+
+.refundprice-container {
+    padding-top: 20px;
+    border-top: 10px solid #dee2e6;
+    margin-bottom: 25px;
+    position: relative;
+    .refundAmount{
+        position: absolute;
+        left: 0;
+    }
+    .refundPrice{
+        position: absolute;
+        right: 0; 
+        margin-right: 6%;
+    }
+    .expand-arrow2 {
+        position: absolute;
+        right: 0;
+        margin-right: 1%;
+        width: 20px;
+        height: 20px;
+        cursor: pointer;
+        transition: transform 0.3s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}
+
+.refundSection{
+    margin-bottom: 20px;
+    position: relative;
+    .reasonBox{
+        margin-top: 7%;
+        width: 80%;
+        padding: 10px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+    }
+    .reasonText{
+        position: absolute;
+        left: 0;
+    }
+}
+
+.detailExpanded-info {  
+    width: calc(100% - 19%);
+    margin-left: 17.5%;
+    margin-top: 10px;
+    border-top: 1px solid #e9ecef;
+    padding-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    .price-detail {
+        display: flex;
+        justify-content: space-between;
+        width: calc(100% - 4%);
+        margin-top: 0.5%;
+
+        .detail-title {
+            color: #777;
+        }
+
+        .detail-value {
+            color: #333;
+        }
+    }
+}
+
+.submitBtn {
+    margin-top: 10%;
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.submitBtn:hover {
+    background-color: #555;
+}

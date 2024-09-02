@@ -1,0 +1,60 @@
+@import '../util';
+
+.Input {
+  border: 1px solid #ccc;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 10px;
+  outline: none;
+
+  &::placeholder {
+    color: $text-gray;
+    padding-left: 5px;
+  }
+
+  &.input-color-gray {
+    background-color: $inptut-gray;
+  }
+
+  &.input-color-white {
+    background-color: white;
+  }
+
+  &.small-placeholder {
+    font-size: $little-font-size;
+
+    &::placeholder {
+      font-size: $little-font-size;
+    }
+  }
+
+  
+}
+
+.label {
+  font-weight: bold;
+  font-size: 13px;
+}
+
+.custom-file-input {
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  text-align: left;
+}
+
+.hidden-file-input {
+  width: 0;
+  height: 0;
+  opacity: 0;
+}
+
+.file-input-label {
+  display: inline-block;
+  padding: 10px 20px;
+  color: white;
+  background-color: #6c757d;
+  border-radius: 4px;
+  cursor: pointer;
+  text-align: center;
+}

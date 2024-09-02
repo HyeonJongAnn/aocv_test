@@ -1,0 +1,526 @@
+@import '../../util.scss';
+
+.ItemDetailContainer {
+    width: 100%;
+    display: flex;
+
+    .Box1 {
+        width: 50%;
+        padding-right: 5%;
+
+        .ImgMain {
+            width: 100%;
+        }
+
+        .ImgsBox {
+            text-align: left;
+
+            .Imgs {
+                width: 10%;
+                margin-top: 5%;
+            }
+        }
+    }
+
+    .Box2 {
+        width: 50%;
+        position: relative;
+        text-align: left;
+
+
+        .name {
+            font-size: 25px;
+            font-family: 'GmarketSans';
+            margin-bottom: 3%;
+        }
+
+        .status {
+            padding: 2px 8px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: bold;
+            color: #fff;
+            width: 75px;
+            text-align: center;
+
+            &.on_sale {
+                background-color: $red;
+            }
+
+            &.sold_out {
+                background-color: $button-gray;
+            }
+        }
+
+
+        .title {
+            font-size: 25px;
+            font-family: 'GmarketSans';
+            margin-bottom: 3%;
+            color: $text-gray;
+        }
+
+
+
+        .rivew {
+            margin-bottom: 3%;
+        }
+
+        .price {
+            font-size: 13px;
+
+            .originalPrice {
+                text-decoration: line-through;
+                color: $text-gray;
+            }
+
+            .discountPercentage {
+                color: red;
+                margin-left: 1%;
+            }
+        }
+
+        .finalPrice {
+            font-size: 20px;
+            margin-bottom: 3%;
+        }
+
+        .address {
+            font-size: 11px;
+            margin-bottom: 3%;
+            margin-top: 3%;
+
+            .p3 {
+                color: $text-gray;
+            }
+        }
+
+        .Itemname {
+            margin-bottom: 3%;
+        }
+
+        .SelectBox {
+            margin-bottom: 3%;
+            font-size: $little-font-size;
+        }
+
+        .color-options {
+            .color-text {
+                font-size: 12px;
+            }
+            .color-circle-container {
+              display: flex;
+              gap: 10px;
+          
+              .color-circle {
+                width: 30px;
+                height: 30px;
+                border-radius: 50%;
+                border: 1px solid #ccc;
+                cursor: pointer;
+                margin-bottom: 10px;
+          
+                &.black {
+                  background-color: black;
+                  border: 2px solid #fff; // 블랙 색상이 배경과 구분되도록 테두리 추가
+                }
+          
+                &.white {
+                  background-color: white;
+                  border: 2px solid #000; // 화이트 색상에 대한 테두리 추가
+                }
+          
+                &.selected {
+                  border: 2px solid  $green;
+                }
+              }
+            }
+          }
+          
+
+
+
+
+        .size {
+            margin-bottom: 3%;
+        }
+
+        .lettering-color {
+            margin-bottom: 3%;
+
+            .letteringLable {
+                font-weight: bold;
+                font-size: $little-font-size;
+                margin-bottom: 5px;
+            }
+
+            .colorText {
+                font-size: 12px;
+                color: $text-gray;
+            }
+        }
+
+        .additional-pets {
+            margin-bottom: 3%;
+        }
+
+        .selected-options {
+            background-color: $inptut-gray;
+            font-size: 13px;
+        }
+
+        .total-price {
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+    }
+}
+
+.random-items {
+    margin-top: 20px;
+
+    h2 {
+        font-size: 15px;
+        margin-bottom: 10px;
+        text-align: left;
+        margin-left: 3%;
+    }
+
+    .random-items-container {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+
+        .random-item {
+            flex: 1 1 calc(25% - 10px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            .priceText {
+                font-size: 13px;
+                width: 50%;
+
+                .originalPrice {
+                    text-decoration: line-through;
+                    color: $text-gray;
+                }
+
+                .discountPercentage {
+                    color: red;
+                    margin-left: 3%;
+                }
+            }
+
+            img {
+                width: 50%;
+                height: auto;
+                object-fit: cover;
+            }
+
+            .p1 {
+                margin: 1%;
+            }
+
+            .p2 {
+                margin: 1%;
+            }
+        }
+    }
+}
+
+
+.modify {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.delete {
+    margin-top: 3%;
+    margin-bottom: 3%;
+}
+
+.line1 {
+    margin-top: 3%;
+}
+
+.line2 {
+    margin-bottom: 3%;
+}
+
+.tab-menu {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3%;
+
+    p {
+        cursor: pointer;
+        padding: 10px 20px;
+        border-bottom: 2px solid transparent;
+        transition: border-color 0.3s;
+
+        &.active {
+            border-bottom-color: #333;
+            font-weight: bold;
+        }
+
+        &:hover {
+            border-bottom-color: #aaa;
+        }
+    }
+}
+
+.content {
+    width: 100%;
+
+    .contentImage {
+        width: 100%;
+    }
+}
+
+.reviewContent {
+    width: 100%;
+    display: block;
+    position: relative;
+
+    .Button {
+        position: absolute;
+        left: 0;
+    }
+}
+
+.regTitle {
+    font-size: 23px;
+    margin-bottom: 3%;
+}
+
+.regButton {
+    position: absolute;
+    right: 0;
+    top: 0;
+    margin-top: 1%;
+    margin-right: 1%;
+    border: solid 0.5px black;
+    background-color: white;
+    color: gray;
+}
+
+
+
+.regTextBox2 {
+    margin-top: 3%;
+
+    .regContent {
+        width: 97%;
+        height: 200px;
+        background-color: $inptut-gray;
+        border-radius: 10px;
+        outline: none;
+        padding-left: 5px;
+        border: 1px solid #ccc;
+        margin-bottom: 3%;
+
+        &::placeholder {
+            color: $text-gray;
+        }
+
+    }
+}
+
+.regTextBox3 {
+    margin-bottom: 3%;
+    margin-top: 2%;
+}
+
+.regTextBox4 {
+    .fileListContainer {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: flex-start;
+        gap: 10px;
+    }
+
+    .fileListItem {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .filePreviewImage {
+        width: 50px;
+        height: 50px;
+        object-fit: cover;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        margin-top: 5px;
+    }
+}
+
+.Button2 {
+    position: absolute;
+    right: 0;
+    margin-right: 4%;
+}
+
+.reviewContent {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.ReviewContainor {
+    margin-top: 6%;
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 20px;
+    position: relative;
+
+    .ReviewBox1 {
+        display: flex;
+
+        .bestLabel {
+            position: absolute;
+            left: 0;
+            background-color: gold;
+            color: black;
+            font-weight: bold;
+            padding: 2px 8px;
+            border-radius: 4px;
+            margin-left: 21%;
+            font-size: 12px;
+        }
+
+
+        .rating {
+            position: absolute;
+            left: 0;
+            margin-left: 4.7%;
+        }
+
+        .userId {
+            position: absolute;
+            right: 0;
+            margin-right: 6%;
+            color: $text-gray;
+        }
+    }
+
+    .ReviewBox2 {
+        display: flex;
+
+        .title {
+            text-align: left;
+            margin-top: 5%;
+            margin-left: 2.5%;
+            font-size: 20px;
+            font-weight: bolder;
+
+        }
+
+        .regDate {
+            position: absolute;
+            right: 0;
+            top: 1;
+            margin-right: 6%;
+            margin-top: 5%;
+            color: $text-gray;
+        }
+    }
+
+    .content {
+        width: 94.5%;
+        padding: 0;
+        margin: 0;
+        margin-left: 3%;
+        margin-top: 5%;
+        text-align: left;
+        color: $text-gray;
+        font-size: 15px;
+        line-height: 1; // 줄 간격을 줄임
+    }
+
+    .Button3Box {
+        margin-top: 3%;
+        text-align: right;
+        margin-right: 3%;
+    }
+
+
+
+
+    .ReviewBox3 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+        gap: 10px;
+        margin-top: 3%;
+        margin-bottom: 3%;
+
+
+    }
+
+    .reviewImage2 {
+        width: 100px;
+        height: 100px;
+        margin-left: 18%;
+        object-fit: cover;
+        cursor: pointer;
+    }
+}
+
+
+.reviewImage {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.imageModal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    outline: none;
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1000;
+}
+
+.imageOverlay {
+    background: rgba(0, 0, 0, 0.75);
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+}
+
+.modalImage {
+    max-width: 90%;
+    max-height: 90%;
+}
+
+.closeButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    color: black;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}

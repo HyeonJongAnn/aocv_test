@@ -1,0 +1,145 @@
+@import '../../util';
+
+.order-list-container {
+  width: 100%;
+  max-width: 768px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: 'Noto Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+.order-list-header {
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.order-summary {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+
+  .summary-item {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .summary-title {
+      font-size: 14px;
+      color: #555;
+    }
+
+    .summary-count {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 5px;
+    }
+  }
+}
+
+.order-item {
+  margin-bottom: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 10px;
+
+  .order-item-header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+
+    .order-date {
+      font-size: 18px;
+      font-weight: bolder;
+      color: #555;
+    }
+
+    .order-status {
+      font-size: 16px;
+      color: #343a40;
+      font-weight: bold;
+    }
+  }
+
+  .order-item-details {
+    display: flex;
+    align-items: flex-start;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+
+    .order-item-image {
+      width: 120px;
+      height: 140px;
+      margin-right: 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    .order-item-info {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 10px 0;
+
+      .item-name {
+        display: block;
+        font-size: 16px;
+        font-weight: bold;
+      }
+      
+      .orderItemOption {
+        font-size: 14px;
+        color: #888;
+        margin-top: 5px;
+      }
+    }
+
+    .order-item-actions {
+      display: flex;
+      flex-direction: column;
+
+      .action-button {
+        margin-top: 5px;
+        padding: 5px 10px;
+        font-size: 14px;
+        color: #fff;
+        background-color: #adb5bd;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+
+        &:hover {
+          background-color: #495057;
+        }
+      }
+    }
+  }
+}
+
+.no-orders {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 200px;
+  text-align: center;
+
+  .no-orders-image {
+    width: 100px;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-size: 18px;
+    font-weight: bolder;
+    color: #555;
+  }
+}

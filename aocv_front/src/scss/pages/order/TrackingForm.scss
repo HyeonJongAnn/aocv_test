@@ -1,0 +1,117 @@
+@import '../../util';
+
+.shipmentContainer {
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.shipmentCheckForm {
+  width: 100%;
+  .shipmentCheckBox {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .trackingInput {
+    flex: 1;
+    margin-left: 1%;
+    margin-right: 10px;
+  }
+
+  .trackingButton {
+    width: 100px;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #ced4da;
+    color: white;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: #adb5bd;
+    }
+  }
+}
+
+.label {
+  white-space: nowrap;
+  margin-bottom: 5px;
+  font-weight: bold;
+}
+
+.lastShipmentCheckContainer {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.lastEvent {
+  margin-bottom: 20px;
+}
+
+.lastEventHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.lastEventHeader h3 {
+  margin: 0;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.lastEventHeader .eventStatus {
+  padding: 5px 10px;
+  border-radius: 5px;
+  background-color: #f1f1f1;
+  color: black;
+  font-weight: bold;
+}
+
+.lastEventDetails p {
+  margin: 5px 0;
+  color: #555;
+}
+
+.eventList ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.eventItem {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+  padding: 10px;
+  background-color: #f1f1f1;
+  border-radius: 5px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.eventItem div {
+  flex: 1;
+  text-align: center;
+}
+
+.eventTime, .eventLocation, .eventStatus, .eventDescription {
+  margin: 0 5px;
+}
+
+.eventTime {
+  font-weight: bold;
+}
+
+.eventStatus {
+  color: #43b3d4;
+}

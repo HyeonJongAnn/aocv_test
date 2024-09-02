@@ -1,0 +1,298 @@
+@import '../../util';
+
+.orderContainer {
+    width: 100%;
+    height: 100%;
+
+    .orderAddressContainer {
+        width: 99.8%;
+        border: 1px solid #dee2e6;
+        border-bottom: 18px solid #dee2e6;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        transition: height 0.3s;
+
+        .address-titleBox {
+            width: 100%;
+            height: 50px;
+
+            .address-title {
+                position: absolute;
+                left: 0;
+                margin-left: 2%;
+            }
+
+            .Button {
+                margin-top: 2%;
+                margin-right: 2%;
+                position: absolute;
+                right: 0;
+
+                &:hover {
+                    background-color: #868e96;
+                }
+            }
+        }
+
+        .addressUserNameBox {
+            display: flex;
+            width: 100%;
+            height: 45px;
+
+            .addressUserName {
+                margin-left: 2%;
+            }
+        }
+
+        .addressUserTel {
+            color: #777;
+            display: flex;
+            margin-left: 2%;
+        }
+
+        .delivery-address {
+            margin-top: 0.5%;
+            display: flex;
+            margin-left: 2%;
+        }
+    }
+
+    .deliveryRequestContainer {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2%;
+
+        .deliveryRequestSelect,
+        .customRequestInput {
+            width: 100%;
+            height: 35px;
+            padding: 5px;
+            box-sizing: border-box;
+            margin-bottom: 10px;
+        }
+    }
+
+    .orderItemListContainer {
+        width: 100%;
+        height: 100%;
+        position: relative;
+        border-bottom: 18px solid #dee2e6;
+
+        .orderItemBox {
+            align-items: flex-start;
+            display: flex;
+            border: 1px solid #dee2e6;
+            padding: 10px;
+            background-color: white;
+
+            .orderItemImage {
+                width: 100px;
+                height: 110px;
+                margin-right: 10px;
+                cursor: pointer;
+            }
+
+            .orderItemDetails {
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                align-items: flex-start;
+
+                .orderItemName {
+                    margin-bottom: 1%;
+                    font-size: 16px;
+                    color: #333;
+                    font-weight: bold;
+                }
+                .orderItemOption {
+                    color: #777;
+                    font-size: 14px;
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+
+    .orderPointContainer {
+        width: 99.8%;
+        height: 100%;
+        border: 1px solid #dee2e6;
+        border-bottom: 18px solid #dee2e6;
+        position: relative;
+        padding-bottom: 20px;
+
+        .orderPointTextContainer {
+            width: 100%;
+            height: 100px;
+            display: flex;
+
+            .orderPoint-title {
+                position: absolute;
+                left: 0;
+                margin-left: 2%;
+            }
+
+            .usePointsText {
+                position: absolute;
+                left: 0;
+                margin-left: 2%;
+                margin-top: 8%;
+            }
+
+            .pointsInput {
+                width: 25%;
+                position: absolute;
+                right: 0;
+                margin-right: 16%;
+                margin-top: 4.5%;
+            }
+
+            .usePointButton {
+                width: 12%;
+                padding: 5px;
+                font-size: 14px;
+                height: 40px;
+                border-radius: 10px;
+                position: absolute;
+                right: 0;
+                margin-right: 2%;
+                margin-top: 6.5%;
+                &:hover {
+                    background-color: #868e96;
+                }
+            }
+
+            .havePointsBox {
+                width: 100%;
+                height: 20px;
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin-top: 12.5%;
+                margin-right: 3%;
+            }
+
+            .havePointsText,
+            .havePoints {
+                margin-right: 20%;
+                color: #777;
+                font-size: 15px;
+                font-weight: normal;
+            }
+
+            .havePointsText {
+                margin-right: 10px;
+            }
+        }
+    }
+
+    .orderSummaryContainer {
+        width: 99.8%;
+        height: 100%;
+        border: 1px solid #dee2e6;
+        border-bottom: 18px solid #dee2e6;
+        position: relative;
+
+        .orderSummaryTextContainer {
+            margin-top: 2%;
+            margin-bottom: 2%;
+            width: 100%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+
+            .orderSummaryText {
+                width: 13%;
+                text-align: left;
+                margin-left: 2%;
+            }
+        }
+
+        .orderSummaryItemPriceBox {
+            width: 100%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1%;
+
+            .orderSummaryItemPriceText {
+                margin-left: 3%;
+            }
+
+            .orderSummaryItemPrice {
+                position: absolute;
+                right: 0;
+                margin-right: 2%;
+            }
+        }
+
+        .orderSummaryUsedPointsBox {
+            margin-top: 1%;
+            width: 100%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1%;
+        }
+
+        .orderSummaryUsedPointsText {
+            margin-left: 3%;
+        }
+
+        .orderSummaryUsedPoints {
+            position: absolute;
+            right: 0;
+            margin-right: 2%;
+        }
+
+        .orderSummaryShippingPriceBox {
+            margin-top: 1%;
+            width: 100%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1%;
+
+            .orderSummaryShippingPriceText {
+                margin-left: 3%;
+            }
+
+            .orderSummaryShippingPrice {
+                position: absolute;
+                right: 0;
+                margin-right: 2%;
+            }
+        }
+
+        .orderSummaryTotalPriceBox {
+            margin-top: 1%;
+            width: 100%;
+            height: 25px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            margin-bottom: 1%;
+
+            .orderSummaryTotalPriceText {
+                margin-left: 3%;
+                font-weight: bold;
+            }
+
+            .orderSummaryTotalPrice {
+                position: absolute;
+                right: 0;
+                margin-right: 2%;
+                font-weight: bold;
+            }
+        }
+    }
+
+    .cartOrderButton {
+        margin-top: 2%;
+    }
+}

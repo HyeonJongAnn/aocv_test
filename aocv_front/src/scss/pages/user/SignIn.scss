@@ -1,0 +1,139 @@
+@import '../../util';
+
+.sign_in_container {
+  position: relative;
+
+  .logoBox {
+    width: 100%;
+    margin-bottom: 3%;
+    cursor: pointer;
+
+    .logo {
+      width: 60%;
+    }
+  }
+
+  .inputContaniner {
+    width: 100%;
+    height: 150px;
+
+    .inputBox1 {
+      width: 100%;
+      height: 50%;
+      display: flex;
+
+      .idBox {
+        width: 32.5%;
+        height: 100%;
+      }
+
+      .idInputBox {
+        width: 67.5%;
+        margin-top: 0.5%;
+      }
+    }
+
+    .inputBox2 {
+      width: 100%;
+      height: 50%;
+      display: flex;
+
+      .pwBox {
+        width: 32.5%;
+        height: 100%;
+      }
+
+      .pwInputBox {
+        width: 67.5%;
+        margin-top: 0.5%;
+      }
+    }
+  }
+
+  .joinFindBox {
+    width: 100%;
+    display: flex;
+    margin-bottom: 3%;
+    margin-top: 3%;
+
+    .joinBox {
+      width: 33%;
+    }
+
+    .idFindBox {
+      width: 33%;
+      border-left: 1px solid black;
+      border-right: 1px solid black;
+    }
+
+    .pwFindBox {
+      width: 33%;
+    }
+  }
+
+  .lineContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 4%;
+    margin-bottom: 3%;
+
+    .text {
+      margin: 0 10px;
+    }
+
+    .comfortLoginLine {
+      flex-grow: 1;
+      height: 1px;
+      background-color: #ced4da;
+    }
+  }
+
+  .comfortLoginContainer {
+    display: flex;
+
+    .kakaoLoginBox {
+      width: 50px;
+      height: 50px;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-left: 33%;
+      margin-right: 7%;
+
+      .kakaoLogin {
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+
+    .googleLoginBox {
+      width: 50px;
+      height: 50px;
+      margin-top: 3%;
+      margin-bottom: 3%;
+      margin-right: 7%;
+
+      .googleLogin {
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+
+    .naverLoginBox {
+      width: 50px;
+      height: 50px;
+      margin-top: 3%;
+      margin-bottom: 3%;
+
+      .naverLogin {
+        width: 100%;
+        height: 50px;
+        cursor: pointer;
+      }
+    }
+  }
+
+}

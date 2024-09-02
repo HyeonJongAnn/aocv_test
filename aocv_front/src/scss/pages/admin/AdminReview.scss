@@ -1,0 +1,102 @@
+.admin-review-container {
+  margin-top: 20px;
+  width: 1240px !important; /* 반드시 필요하다는 조건 */
+  max-width: 100%; /* 부모 요소의 크기에 맞춰 조정 */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  display: block; /* 블록 요소로 설정 */
+  overflow: hidden; /* 부모 요소를 넘지 않도록 설정 */
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #333;
+  }
+
+  .review-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+
+    th,
+    td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+      word-wrap: break-word;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      font-weight: bold;
+    }
+
+    img {
+      border-radius: 5px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    .truncate {
+      max-width: 150px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .actions {
+      button {
+        margin-right: 5px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease;
+
+        &.btn-success {
+          background-color: #28a745;
+
+          &:hover {
+            background-color: #218838;
+          }
+
+          &:disabled {
+            background-color: #94d3a2;
+          }
+        }
+
+        &.btn-warning {
+          background-color: #ffc107;
+
+          &:hover {
+            background-color: #e0a800;
+          }
+
+          &:disabled {
+            background-color: #ffd966;
+          }
+        }
+
+        &.btn-danger {
+          background-color: #dc3545;
+
+          &:hover {
+            background-color: #c82333;
+          }
+        }
+      }
+    }
+  }
+
+  .no-reviews {
+    text-align: center;
+    color: #777;
+    margin: 20px 0;
+  }
+}
+
+@media (max-width: 1240px) {
+  .admin-review-container {
+    width: 100%;
+    padding: 0 10px;
+  }
+}

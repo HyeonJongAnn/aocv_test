@@ -1,0 +1,149 @@
+@import '../../util.scss';
+
+.itemModifyModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+  width: 80%;
+  max-width: 900px;
+  overflow-y: auto;
+  max-height: 90vh;
+}
+
+.itemRegContainor {
+  position: relative;
+  width: 100%;
+
+  .title1 {
+    margin-bottom: 3%;
+  }
+
+  .box1 {
+    width: 100%;
+    display: flex;
+    height: 50px;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    .titleBox1 {
+      width: 15%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .inputBox1 {
+      width: 70%;
+      margin-top: 0.5%;
+    }
+
+    .buttonBox {
+      width: 15%;
+      margin-top: 0.5%;
+      height: 43px;
+
+      .Button {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        font-size: 12px;
+      }
+    }
+  }
+
+  .selectBoxContainer {
+    display: flex;
+    margin-top: 1%;
+    margin-bottom: 1%;
+
+    .titleBox2 {
+      width: 15%;
+      text-align: center;
+      justify-content: center;
+      align-items: center;
+
+      .titletext {
+        margin-top: 35%;
+      }
+    }
+
+    .SelectBox {
+      width: 70%;
+      height: auto;
+    }
+  }
+
+  .FullWidthButton {
+    width: 95%;
+    margin-top: 3%;
+  }
+
+  .fileListContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .fileListItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+  }
+
+  .filePreviewImage {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-top: 5px;
+  }
+
+  .optionsTable {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+
+    th, td {
+      border: 1px solid #ddd;
+      padding: 8px;
+      text-align: center;
+    }
+
+    th {
+      background-color: #f4f4f4;
+      position: relative;
+
+      div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        div {
+          flex: 1;
+          text-align: center;
+        }
+      }
+    }
+
+    .deleteButton {
+      background-color: #ff4d4f;
+      color: white;
+      border: none;
+      padding: 5px 10px;
+      cursor: pointer;
+    }
+
+    .deleteButton:hover {
+      background-color: #ff7875;
+    }
+  }
+}

@@ -1,0 +1,99 @@
+@import '../util';
+
+.Button, .FullWidthButton, .SvgButton, .Button2, .Button3{
+  &.btn-color-white {
+    color: black;
+    background-color: white;
+
+    svg {
+      color: black;
+    }
+  }
+
+  &.btn-color-gray {
+    background-color: hsl(217, 15%, 83%)
+  }
+
+  &.btn-color-shadegray {
+    background-color: #adb5bd;
+  }
+
+  &.btn-color-thickgray {
+    background-color: #868e96;
+  }
+
+  &.btn-color-green {
+    background-color: $green;
+  }
+
+  &.btn-color-red {
+    background-color: $red;
+  }
+
+  &.btn-color-yellow {
+    background-color: $yellow;
+  }
+
+  &.btn-color-blue {
+    background-color: $blue;
+  }
+}
+
+.Button {
+  padding: 5px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Button2 {
+  padding: 5px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.Button3 {
+  padding: 5px 30px;
+  cursor: pointer;
+  border: none;
+  border-radius: 40px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+.FullWidthButton {
+  width: 100%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  cursor: pointer;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+
+.SvgButton {
+  cursor: pointer;
+  border: none;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  svg {
+    color: white;
+    font-size: 1.333rem;
+  }
+}

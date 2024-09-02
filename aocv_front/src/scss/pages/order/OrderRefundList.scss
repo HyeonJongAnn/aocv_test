@@ -1,0 +1,152 @@
+@import '../../util';
+
+.refund-exchange-list-container {
+    width: 100%;
+    max-width: 768px;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: 'Noto Sans', sans-serif;
+    box-sizing: border-box;
+  }
+  
+  .refund-exchange-list-header {
+    text-align: center;
+    justify-content: center;
+    margin-bottom: 20px;
+  }
+  
+  .refund-exchange-summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+  
+    .summary-item {
+      padding: 10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+  
+      .summary-title {
+        font-size: 14px;
+        color: #555;
+      }
+  
+      .summary-count {
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 5px;
+      }
+    }
+  }
+  
+  .request-item {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 10px;
+  
+    .request-item-header {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 10px;
+  
+      .request-date {
+        font-size: 18px;
+        font-weight: bolder;
+        color: #555;
+      }
+  
+      .request-status {
+        font-size: 16px;
+        color: #343a40;
+        font-weight: bold;
+      }
+    }
+  
+    .request-item-details {
+      display: flex;
+      align-items: flex-start;
+      padding: 10px;
+      background-color: #f9f9f9;
+      border-radius: 5px;
+  
+      .request-item-image {
+        width: 120px;
+        height: 140px;
+        margin-right: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+      }
+  
+      .request-item-info {
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        padding: 10px 0;
+  
+        .request-item-name {
+          display: block;
+          font-size: 16px;
+          font-weight: bold;
+          margin-bottom: 3px;
+        }
+  
+        .orderItemOption {
+          font-size: 14px;
+          color: #888;
+          margin-top: 2px;
+        }
+  
+        .request-amount {
+          font-size: 14px;
+          color: #888;
+          margin-top: 2px;
+        }
+      }
+  
+      .request-item-actions {
+        display: flex;
+        flex-direction: column;
+  
+        .action-button {
+          margin-top: 5px;
+          padding: 5px 10px;
+          font-size: 14px;
+          color: #fff;
+          background-color: #adb5bd;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+  
+          &:hover {
+            background-color: #495057;
+          }
+        }
+      }
+    }
+  }
+  
+  .no-requests {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+    text-align: center;
+  
+    .no-requests-image {
+      width: 100px;
+      height: auto;
+      margin-bottom: 20px;
+    }
+  
+    span {
+      font-size: 18px;
+      font-weight: bolder;
+      color: #555;
+    }
+  }

@@ -1,0 +1,73 @@
+.noticeModifyModal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    width: 80%;
+    max-width: 900px;
+    overflow-y: auto;
+    max-height: 90vh;
+  }
+  
+  .noticeRegContainor {
+    width: 100%;
+  
+    .title1 {
+      margin-bottom: 3%;
+      text-align: center;
+    }
+  
+    .FullWidthButton {
+      width: 95%;
+      margin-top: 3%;
+      display: flex;
+      justify-content: center;
+    }
+  
+    .fileListContainer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 20px;
+    }
+  
+    .fileListItem {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 10px;
+      position: relative;
+      transition: transform 0.2s ease;
+    }
+  
+    .filePreviewImage {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-top: 5px;
+    }
+  
+    .fileListItem button {
+      position: absolute;
+      top: 5px;
+      right: 5px;
+      border: none;
+      border-radius: 50%;
+      width: 24px;
+      height: 24px;
+      cursor: pointer;
+    }
+  
+    .dragging {
+      transform: rotate(5deg);
+    }
+  }
+  
