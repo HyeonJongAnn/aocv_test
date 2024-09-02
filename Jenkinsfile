@@ -5,6 +5,7 @@ pipeline {
         stage('Build Spring Boot') {
             steps {
                 dir('aocv_back1') {
+                    sh 'chmod +x gradlew' // 실행 권한 부여
                     sh './gradlew clean build'
                 }
             }
